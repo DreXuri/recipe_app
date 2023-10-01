@@ -8,15 +8,16 @@ import 'package:receipe_app/ui/extension/app_typography.dart';
 import 'package:receipe_app/ui/extension/palette.dart';
 import 'package:receipe_app/ui/views/homepage/widgets/product_item.dart';
 import 'package:stacked/stacked.dart';
-import 'homepage_viewmodel.dart';
 
-class HomepageView extends StackedView<HomepageViewModel> {
-  const HomepageView({Key? key}) : super(key: key);
+import 'my_dish_screen_viewmodel.dart';
+
+class MyDishScreenView extends StackedView<MyDishScreenViewModel> {
+  const MyDishScreenView({Key? key}) : super(key: key);
 
   @override
   Widget builder(
     BuildContext context,
-    HomepageViewModel viewModel,
+    MyDishScreenViewModel viewModel,
     Widget? child,
   ) {
     ThemeData theme = Theme.of(context);
@@ -27,10 +28,7 @@ class HomepageView extends StackedView<HomepageViewModel> {
           backgroundColor: kcBackground,
           elevation: 0,
           leading: InkWell(
-              onTap: () {
-                //  TODO open drawer
-                Drawer();
-              },
+              onTap: viewModel.openDrawer,
               child: Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -46,7 +44,7 @@ class HomepageView extends StackedView<HomepageViewModel> {
                 ),
               )),
           title: Text(
-            'Home',
+            'My Dish',
             style: typography?.titleBold16?.copyWith(color: palette?.gray11),
           )),
       body: SafeArea(
@@ -80,19 +78,12 @@ class HomepageView extends StackedView<HomepageViewModel> {
           ],
         ),
       ),
-    
-    
-      floatingActionButton: FloatingActionButton(
-        onPressed: viewModel.navigateToAddProduct,
-        backgroundColor: AppColors.primary6,
-        child: SvgPicture.asset(AppImages.addcon),
-      ),
     );
   }
 
   @override
-  HomepageViewModel viewModelBuilder(
+  MyDishScreenViewModel viewModelBuilder(
     BuildContext context,
   ) =>
-      HomepageViewModel();
+      MyDishScreenViewModel();
 }

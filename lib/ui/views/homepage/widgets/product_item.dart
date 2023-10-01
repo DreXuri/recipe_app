@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:receipe_app/data_model/product_model.dart';
-import 'package:receipe_app/ui/common/app_colors.dart';
 import 'package:receipe_app/ui/extension/palette.dart';
 import 'package:receipe_app/ui/views/homepage/widgets/favourite_widget.dart';
-import 'package:receipe_app/ui/views/homepage/widgets/liked_widget.dart';
-import 'package:receipe_app/ui/views/homepage/widgets/unliked_widget.dart';
 import 'package:receipe_app/ui/widgets/common/richtext_widget.dart';
 
 class ProductItem extends StatelessWidget {
@@ -55,4 +52,3 @@ class ProductItem extends StatelessWidget {
     );
   }
 }
-

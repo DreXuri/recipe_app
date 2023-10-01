@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:receipe_app/app/app.locator.dart';
-import 'package:receipe_app/app/app.router.dart';
 import 'package:receipe_app/data_model/product_model.dart';
 import 'package:receipe_app/ui/common/app_images.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-class HomepageViewModel extends BaseViewModel {
+class MyDishScreenViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();
 
   List<ProductModel> productItems = [
@@ -47,10 +46,9 @@ class HomepageViewModel extends BaseViewModel {
       title: 'Spaghetti',
     ),
   ];
-
-  void navigateToAddProduct() {
-    debugPrint('Goto add product page');
-// TODO  below should be replased with navigate to add product page 
-    _navigationService.navigateToMyDishScreenView();
+  void openDrawer() {
+    debugPrint('open drawer');
+// TODO  below should be replased with navigate to add product page
+    _navigationService.back();
   }
 }
