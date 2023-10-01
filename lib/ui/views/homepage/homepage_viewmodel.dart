@@ -50,7 +50,7 @@ class HomepageViewModel extends BaseViewModel {
 
   void navigateToAddProduct() {
     debugPrint('Goto add product page');
-// TODO  below should be replased with navigate to add product page 
+// TODO  below should be replased with navigate to add product page
     _navigationService.navigateToMyDishScreenView();
   }
 }

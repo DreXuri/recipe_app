@@ -6,7 +6,7 @@ import 'package:receipe_app/ui/common/app_images.dart';
 import 'package:receipe_app/ui/common/ui_helpers.dart';
 import 'package:receipe_app/ui/extension/app_typography.dart';
 import 'package:receipe_app/ui/extension/palette.dart';
-import 'package:receipe_app/ui/views/homepage/widgets/product_item.dart';
+import 'package:receipe_app/ui/views/homepage/widgets/product_item/product_item.dart';
 import 'package:stacked/stacked.dart';
 import 'homepage_viewmodel.dart';
 
@@ -80,8 +80,6 @@ class HomepageView extends StackedView<HomepageViewModel> {
           ],
         ),
       ),
-    
-    
       floatingActionButton: FloatingActionButton(
         onPressed: viewModel.navigateToAddProduct,
         backgroundColor: AppColors.primary6,
