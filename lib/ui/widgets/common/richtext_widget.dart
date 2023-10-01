@@ -7,7 +7,7 @@ class RichTextWidget extends StatelessWidget {
     required this.color1,
     required this.color2,
     required this.text1,
-   required this.text2,
+    required this.text2,
   });
 
   final Color? color1;
