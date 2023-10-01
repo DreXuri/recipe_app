@@ -23,7 +23,9 @@ class ProductItem extends StackedView<ProductItemModel> {
     ThemeData theme = Theme.of(context);
     Palette? palette = theme.extension<Palette>();
     return InkWell(
-      onTap: viewModel.navigateToProductDetail,
+      onTap: () {
+        viewModel.navigateToProductDetail(productModel);
+      },
       child: SizedBox(
         height: 252.h,
         width: 171.w,

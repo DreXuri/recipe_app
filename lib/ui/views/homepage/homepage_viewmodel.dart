@@ -11,36 +11,42 @@ class HomepageViewModel extends BaseViewModel {
 
   List<ProductModel> productItems = [
     ProductModel(
+      id: 'SR11',
       date: 'May 28, 2023',
       image: AppImages.spagLog,
       title: 'Spaghetti',
       isLiked: false,
     ),
     ProductModel(
+      id: 'SR11',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogFour,
       title: 'Spaghetti',
     ),
     ProductModel(
+      id: 'SR11',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogThree,
       title: 'Spaghetti',
     ),
     ProductModel(
+      id: 'SR11',
       isLiked: true,
       date: 'May 28, 2023',
       image: AppImages.spagLogTwo,
       title: 'Spaghetti',
     ),
     ProductModel(
+      id: 'SR11',
       isLiked: true,
       date: 'May 28, 2023',
       image: AppImages.spagLog,
       title: 'Spaghetti',
     ),
     ProductModel(
+      id: 'SR11',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogTwo,
@@ -53,4 +59,7 @@ class HomepageViewModel extends BaseViewModel {
 // TODO  below should be replased with navigate to add product page
     _navigationService.navigateToMyDishScreenView();
   }
+
+
+  
 }

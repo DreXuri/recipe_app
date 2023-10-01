@@ -9,6 +9,7 @@ import 'package:receipe_app/ui/views/onboarding/onboarding_view.dart';
 import 'package:receipe_app/ui/views/login/login_view.dart';
 import 'package:receipe_app/ui/views/homepage/homepage_view.dart';
 import 'package:receipe_app/ui/views/signup/signup_view.dart';
+import 'package:receipe_app/ui/views/single_product_view/single_product_view_view.dart';
 import 'package:receipe_app/ui/views/my_dish_screen/my_dish_screen_view.dart';
 // @stacked-import
 
@@ -20,6 +21,7 @@ import 'package:receipe_app/ui/views/my_dish_screen/my_dish_screen_view.dart';
     AdaptiveRoute(page: LoginView),
     AdaptiveRoute(page: HomepageView),
     AdaptiveRoute(page: SignupView),
+    AdaptiveRoute(page: SingleProductViewView),
     AdaptiveRoute(page: MyDishScreenView),
 // @stacked-route
   ],

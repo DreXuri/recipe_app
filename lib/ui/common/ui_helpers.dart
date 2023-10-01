@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 const double _tinySize = 5.0;
 const double _smallSize = 10.0;
 const double _mediumSize = 25.0;
+const double _semiMediumSize = 32.0;
 const double _largeSize = 50.0;
 const double _massiveSize = 120.0;
 double sidePadding = 16.w;
@@ -18,6 +19,7 @@ const Widget horizontalSpaceLarge = SizedBox(width: _largeSize);
 const Widget verticalSpaceTiny = SizedBox(height: _tinySize);
 const Widget verticalSpaceSmall = SizedBox(height: _smallSize);
 const Widget verticalSpaceMedium = SizedBox(height: _mediumSize);
+const Widget verticalSemiSpaceMedium = SizedBox(height: _semiMediumSize);
 const Widget verticalSpaceLarge = SizedBox(height: _largeSize);
 const Widget verticalSpaceMassive = SizedBox(height: _massiveSize);
 
