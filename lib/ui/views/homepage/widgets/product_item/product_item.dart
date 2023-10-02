@@ -36,10 +36,13 @@ class ProductItem extends StackedView<ProductItemModel> {
             Stack(
               alignment: AlignmentDirectional.topEnd,
               children: [
-                Image.asset(
-                  productModel.image,
-                  height: 200.h,
-                  fit: BoxFit.contain,
+                Hero(
+                  tag: productModel.id,
+                  child: Image.asset(
+                    productModel.image,
+                    height: 200.h,
+                    fit: BoxFit.contain,
+                  ),
                 ),
                 FavoriteWidget(productModel: productModel)
               ],

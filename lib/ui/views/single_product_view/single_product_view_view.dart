@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:receipe_app/data_model/product_model.dart';
 import 'package:receipe_app/ui/common/app_colors.dart';
 import 'package:receipe_app/ui/common/app_images.dart';
@@ -12,9 +11,11 @@ import 'package:receipe_app/ui/views/single_product_view/widget/card_tiles.dart'
 import 'package:receipe_app/ui/widgets/common/richtext_widget.dart';
 import 'package:stacked/stacked.dart';
 import 'single_product_view_viewmodel.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class SingleProductViewView extends StackedView<SingleProductViewViewModel> {
-  const SingleProductViewView({required this.products, Key? key}) : super(key: key);
+  const SingleProductViewView({required this.products, Key? key})
+      : super(key: key);
   final ProductModel products;
   @override
   Widget builder(
@@ -35,9 +36,13 @@ class SingleProductViewView extends StackedView<SingleProductViewViewModel> {
                 onTap: viewModel.goBack,
                 child: SizedBox(
                   height: 456.h,
-                  child: Image.asset(
-                    products.image,
-                    fit: BoxFit.cover,
+                  child: Hero(
+                    tag: products.id,
+                    child: Image.asset(
+                      products.image,
+                      height: 456.h,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),

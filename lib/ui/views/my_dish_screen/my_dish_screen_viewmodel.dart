@@ -17,35 +17,35 @@ class MyDishScreenViewModel extends BaseViewModel {
       isLiked: false,
     ),
     ProductModel(
-      id: 'SR11',
+      id: 'SR12',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogFour,
       title: 'Spaghetti',
     ),
     ProductModel(
-      id: 'SR11',
+      id: 'SR13',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogThree,
       title: 'Spaghetti',
     ),
     ProductModel(
-      id: 'SR11',
+      id: 'SR14',
       isLiked: true,
       date: 'May 28, 2023',
       image: AppImages.spagLogTwo,
       title: 'Spaghetti',
     ),
     ProductModel(
-      id: 'SR11',
+      id: 'SR15',
       isLiked: true,
       date: 'May 28, 2023',
       image: AppImages.spagLog,
       title: 'Spaghetti',
     ),
     ProductModel(
-      id: 'SR11',
+      id: 'SR16',
       isLiked: false,
       date: 'May 28, 2023',
       image: AppImages.spagLogTwo,
@@ -53,7 +53,6 @@ class MyDishScreenViewModel extends BaseViewModel {
     ),
   ];
 
-  
   void openDrawer() {
     debugPrint('open drawer');
 // TODO  below should be replased with navigate to add product page
